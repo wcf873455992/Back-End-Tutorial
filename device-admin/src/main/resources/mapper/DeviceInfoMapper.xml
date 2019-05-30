@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.device.admin.dao.mapper.DeviceInfoMapper">
+    <insert id="insertOrUpdateDeviceProperty" parameterType="com.example.device.admin.dao.entity.po.DeviceInfo">
+   INSERT INTO device_info(device_name,current_temperature,current_humidity,temp_threshold,gmt_update)
+   VALUES(#{deviceName},#{currentTemperature},#{currentHumidity},#{tempThreshold},#{gmtUpdate}) ON DUPLICATE KEY UPDATE
+            device_name=#{deviceName},
+            current_temperature=#{currentTemperature},
+            current_humidity=#{currentHumidity},
+            temp_threshold=#{tempThreshold},
+            gmt_update= #{gmtUpdate}
+  </insert>
+
+    <insert id="insertOrUpdateStatus" parameterType="com.example.device.admin.dao.entity.po.DeviceInfo">
+   INSERT INTO device_info(device_name,connect_status,last_online_date,gmt_update)
+   VALUES(#{deviceName},#{connectStatus},#{lastOnlineDate},#{gmtUpdate}) ON DUPLICATE KEY UPDATE
+            device_name=#{deviceName},
+            connect_status=#{connectStatus},
+            last_online_date=#{lastOnlineDate},
+            gmt_update= #{gmtUpdate}
+  </insert>
+
+
+
+</mapper>
