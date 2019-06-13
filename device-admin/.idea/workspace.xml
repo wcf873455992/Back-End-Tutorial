@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e052c970-71f9-4847-a6be-c06d1cb3ab71" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../device-admin-demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../device-admin-demo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="62">
-              <caret line="30" column="49" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="49" />
+              <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="38" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -41,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/device/admin/web/config/DeviceMessageRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4070">
+            <state relative-caret-position="3674">
               <caret line="210" selection-start-line="210" selection-end-line="210" />
             </state>
           </provider>
@@ -187,6 +185,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="device-admin" type="58d84e3e:PackageViewProjectNode" />
+              <item name="device-admin" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="device-admin" type="58d84e3e:PackageViewProjectNode" />
+              <item name="device-admin" type="616d4139:PackageViewModuleNode" />
+              <item name="com.example.device.admin" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="device-admin" type="58d84e3e:PackageViewProjectNode" />
+              <item name="device-admin" type="616d4139:PackageViewModuleNode" />
+              <item name="com.example.device.admin" type="1f31426a:PackageElementNode" />
+              <item name="service" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="device-admin" type="58d84e3e:PackageViewProjectNode" />
+              <item name="device-admin" type="616d4139:PackageViewModuleNode" />
+              <item name="com.example.device.admin" type="1f31426a:PackageElementNode" />
+              <item name="web" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,35 +272,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="device-admin" type="58d84e3e:PackageViewProjectNode" />
-              <item name="device-admin" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="device-admin" type="58d84e3e:PackageViewProjectNode" />
-              <item name="device-admin" type="616d4139:PackageViewModuleNode" />
-              <item name="com.example.device.admin" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="device-admin" type="58d84e3e:PackageViewProjectNode" />
-              <item name="device-admin" type="616d4139:PackageViewModuleNode" />
-              <item name="com.example.device.admin" type="1f31426a:PackageElementNode" />
-              <item name="service" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="device-admin" type="58d84e3e:PackageViewProjectNode" />
-              <item name="device-admin" type="616d4139:PackageViewModuleNode" />
-              <item name="com.example.device.admin" type="1f31426a:PackageElementNode" />
-              <item name="web" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -340,16 +338,18 @@
       <workItem from="1560414559813" duration="880000" />
       <workItem from="1560416586613" duration="49000" />
       <workItem from="1560416809141" duration="67000" />
+      <workItem from="1560417024408" duration="20000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24043000" />
+    <option name="totallyTimeSpent" value="24063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1016" y="-8" width="1376" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3500761" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3500761" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -359,7 +359,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5674342" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.13651316" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -375,7 +375,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.2402863" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.23972602" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -505,7 +505,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/device/admin/web/config/DeviceMessageRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4070">
+        <state relative-caret-position="3674">
           <caret line="210" selection-start-line="210" selection-end-line="210" />
         </state>
       </provider>
@@ -571,7 +571,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
-          <caret line="30" column="49" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="49" />
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="38" selection-end-column="45" />
         </state>
       </provider>
     </entry>
