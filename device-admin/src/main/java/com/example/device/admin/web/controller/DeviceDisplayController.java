@@ -12,6 +12,9 @@ import com.example.device.admin.service.AliyunDeviceService;
 import com.example.device.admin.service.DeviceInfoService;
 import com.example.device.admin.service.DevicePropHistoryLogService;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
@@ -24,6 +27,7 @@ import java.util.*;
 
 @Controller
 @CrossOrigin
+@Api(value = "设备信息显示")
 public class DeviceDisplayController {
 
     @Autowired
@@ -41,6 +45,7 @@ public class DeviceDisplayController {
 
 
     //获取设备属性(当前温湿度及报警阀值及设备在线状态)
+    @ApiOperation(value = "获取设备属性", notes = "当前温湿度、报警阀值、设备在线状态")
     @RequestMapping(value = "/api/v1/device/queryDeviceProp",method = RequestMethod.GET)
     public @ResponseBody  BaseResp<DeviceInfo> queryDeviceProp(String deviceName) {
         DeviceInfo deviceInfo=deviceInfoService.getDeviceInfoByDeviceName(deviceName);
@@ -77,7 +82,7 @@ public class DeviceDisplayController {
     }
 
 
- /*  //Alink方式修改设备报警阀值，如果是高级版，请启用此段代码 如果是基础版，请注释此段代码
+   //Alink方式修改设备报警阀值，如果是高级版，请启用此段代码 如果是基础版，请注释此段代码
     @RequestMapping(value = "/api/v1/device/setDeviceProperty",method = RequestMethod.GET)
     public @ResponseBody BaseResp setDeviceProperty(String deviceName, Integer tempThreshold) {
         Boolean b = null;
@@ -89,7 +94,7 @@ public class DeviceDisplayController {
         Map<String,Boolean> map=new HashMap();
         map.put("isSuccess",b);
         return new BaseResp<>(ResultStatus.SUCCESS,map); }
-*/
+/*
 
    //透传方式修改设备报警阀值 如果是基础版，请启用此段代码 如果是高级版，请注释此段代码
     @RequestMapping(value = "/api/v1/device/setDeviceProperty",method = RequestMethod.GET)
@@ -107,8 +112,8 @@ public class DeviceDisplayController {
         Map<String,Boolean> map=new HashMap();
         map.put("isSuccess",b);
         return new BaseResp<>(ResultStatus.SUCCESS,map); }
+*/
 
-/*
    //Alink方式设备报警状态取消 如果是高级版，请启用此段代码 如果是基础版，请注释此段代码
    @RequestMapping(value = "/api/v1/device/clearAlarm",method = RequestMethod.GET)
     public @ResponseBody BaseResp clearAlarm(String deviceName) {
@@ -124,8 +129,8 @@ public class DeviceDisplayController {
         Map<String,Boolean> map=new HashMap();
         map.put("isSuccess",b);
         return new BaseResp<>(ResultStatus.SUCCESS,map);}
-    */
 
+/*
     //透传方式设备报警状态取消 如果是基础版，请启用此段代码 如果是高级版，请注释此段代码
     @RequestMapping(value = "/api/v1/device/clearAlarm",method = RequestMethod.GET)
     public @ResponseBody BaseResp clearAlarm(String deviceName) {
@@ -142,7 +147,7 @@ public class DeviceDisplayController {
         map.put("isSuccess",b);
         return new BaseResp<>(ResultStatus.SUCCESS,map); }
 
-
+*/
 
 
 
